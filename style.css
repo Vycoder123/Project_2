@@ -1,0 +1,680 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    height: auto;
+    font-family: 'Poppins';
+}
+
+.container{
+    height: 3500px;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+/* Phần header */
+.header{
+    height: 860px;
+}
+.header_top{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    background-color: #ece3e3; 
+}
+.nav ul{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover{
+    color: brown;
+}
+.nav li{
+    margin: 0 15px;
+    list-style-type: none;
+}
+.sign{
+    display: flex;
+}
+.active{
+    color: black;
+    font-weight: 600;
+}
+.logo img{
+    height: 37px;
+    width: 137px;
+    object-fit: cover;
+    transform: translateY(10px);
+}
+.btn_SignIn{
+    margin: 0 10px;
+}
+.btn_SignIn button{
+    padding: 5px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: aqua;
+    cursor: pointer;
+    
+}
+.btn_SignUp{
+    margin-right: 5px;
+}
+.btn_SignUp button{
+    padding: 5px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: aqua;
+    cursor: pointer;
+}
+.btn-sign button:hover{
+    background-color: azure;
+}
+
+
+.header_main{
+    height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #ece3e3;
+}
+.header_main--title{
+    width: 40%;
+}
+.header_main--title p{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.header_main--title h1{
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 35px;
+}
+.header_main--title p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+.title_btn{
+    display: flex;
+}
+.getStarted button{
+    padding: 10px 15px;
+    margin-right: 35px;
+    border-radius: 12px;
+    border: none;
+    background-color: aqua;
+    color: aliceblue;
+    font-weight: 600;
+}
+.getStarted button:hover{
+    background-color: blueviolet;
+}
+.video i{
+    padding: 10px;
+    border-radius: 50%;
+    border: solid 1px #aaa;
+    color: aqua;
+    font-size: 20px;
+}
+.video i:hover{
+    background-color: blueviolet;
+}
+.header_main--image{
+    overflow: hidden;
+}
+.image--main img{
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    position: relative;
+    transition: 0.5s;
+}
+.image--main img:hover{
+    transform: scale(1.3);
+}
+.image--extra--1 img{
+    position: absolute;
+    width: 157px;
+    height: 75px;
+    object-fit: cover;
+    top:293px;
+    right: 529px;
+}
+.image--extra--2 img{
+    position: absolute;
+    width: 207px;
+    height: 90px;
+    object-fit: cover;
+    top:663px;
+    right: 70px;
+}
+.image--extra--3 img{
+    position: absolute;
+    width: 124px;
+    height: 132px;
+    object-fit: cover;
+    top:663px;
+    right: 569px;
+}
+.features{
+    width: 80%;
+    height: 559px;
+}
+
+.features__top{
+    width: 60%;
+    height: 220px;
+    padding: 5px;
+}
+.features__top--title h1{
+    margin-bottom: 12px;
+}
+.features__bottom{
+    height: 259px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 5px 5px 5px #aaa;
+}
+.features__bottom--content{
+    width: 30%;
+}
+.features__icon i{
+    font-size: 48px;
+    padding: 44px;
+    background-color: yellow;
+    border-radius: 30px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+.features__bottom--content p{
+    font-size: 15px;
+}
+.icon_2 i{
+    background-color: blueviolet;
+}
+.icon_3 i{
+    background-color: rgb(43, 76, 226);
+}
+.features__icon i:hover{
+    transform: scale(1.2);
+}
+
+.courses{
+    height: 778px;
+    margin-bottom: 100px;
+}
+.courses__top{
+    height: 182px;
+    width: 60%;
+    padding: 10px;
+}
+.courses__top--title h1{
+    margin-bottom: 20px;
+}
+.courses__bottom{
+    margin-top: 79px;
+    height: 517px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px 10px;
+}
+.courses__bottom--content{
+    width: 30%;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.courses__image img{
+    height: 393px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.courses__image img:hover{
+    transform: scale(1.2);
+    border-radius: 20px;
+}
+.courses__card{
+    width: auto;
+    height: 195px;
+    padding: 15px;
+    background-color: aliceblue;
+    z-index: 2;
+    margin: 0 auto;
+    transform: translateY(-72px);
+}
+/* .card--2{
+    position: absolute;
+    top:2002px;
+    left: 511px;
+}
+.card--3{
+    position: absolute;
+    top:2002px;
+    left: 935px;
+} */
+.fee__price{
+    display: flex;
+    align-items: center;
+}
+.fee__price .fee{
+    margin-right: 10px;
+}
+.fee__price .price{
+    font-size: 20px;
+    font-weight: 600;
+}
+.group{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.class {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.circle{
+    height: 5px;
+    width: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: aqua;
+    margin-right: 5px;
+}
+.month {
+    display: flex;
+    align-items: center;
+}
+.countdown{
+    width: 862px;
+    height: 131px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 5px #ba5151da;
+}
+.countdown__content h1{
+    font-weight: 700;
+    font-size: 62px;
+}
+.testimonial{
+    margin-top: 90px;
+    height: 481px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px 3px 7px 4px #0a4d0d;
+}
+.testimonial__left{
+    height: 407px;
+    width: 40%;
+    padding: 10px;
+}
+.testimonial__left h4{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+}
+.testimonial__left p{
+    margin-top: 40px;
+    font-weight: 400;
+}
+strong{
+    font-weight: bold;
+}
+.btn__testimonial{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+.btn-left i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(24, 218, 24);
+    margin-right: 10px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-right i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(24, 218, 24);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_active i{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.button_active i:hover{
+    background-color: aqua;
+}
+.testimonial__image--main img{
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+    margin-right: 290px;
+    border-radius: 50%;
+    position: relative;
+}
+.testimonial__image--extra1 img{
+    width: 92px;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top :2520px;
+    right: 650px;
+}
+.testimonial__image--extra2 img{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top :2590px;
+    right: 250px;
+}
+.testimonial__image--extra3 img{
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top :2890px;
+    right: 250px;
+}
+.testimonial__image--extra4 img{
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top :2890px;
+    right: 650px;
+}
+.testimonial__image--extra5 img{
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top :2690px;
+    right: 850px;
+}
+.testimonial__right img{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.images__active img:hover{
+    transform: scale(1.3);
+}
+
+.ready{
+    margin-top: 90px;
+    width: 100%;
+    height: 272px;
+    background-color: rgb(139, 211, 148);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ready__left h1{
+    font-weight: 700;
+    font-size: 42px;
+    margin-left: 15px;
+}
+.ready__left p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.ready__button button{
+    height: 68px;
+    width: 186px;
+    background-color: aquamarine;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.ready__button button:hover{
+    background-color: aqua;
+    transform: rotate(-360deg);
+}
+
+.footer{
+    margin-top: 100px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ece3e3;
+}
+.footer ul{
+    margin-top: 20px;
+}
+.logo__footer img{
+    width: 127px;
+    height: 37px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.footer_active{
+    font-weight: 600;
+}
+
+/* PC */
+@media (min-width: 992px) {
+    .menu__header{
+        display: none;
+    }
+}
+/* Tablet & mobile */
+
+@media (max-width: 991.98px) {
+    .container{
+        height: 9500px;
+    }
+    /* ẩn phần nav */
+    .nav{
+        display: none;
+    }
+    /* chuyển logo header vào giữa  */
+    .header_top{
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .logo img{
+        transform: translateY(23px);
+    }
+    /* phần chỉnh sign */
+    .sign{
+        position: absolute;
+        right: 0;
+    }
+    /* phần điều chỉnh menu */
+    .menu__header {
+        position: absolute;
+        top:37px;
+    }
+    .menu__header i{
+        font-size: 40px;
+    }
+    /* phần  overlay */
+    .menu-overlay{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.3);
+        inset: 0;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu-checkbox:checked ~ .menu-overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+    /* phần menu-drawer */
+    .menu-drawer{
+        position: fixed;
+        background-color: #2e1919;
+        inset: 0 40% 0 0;
+        z-index: 11;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        padding: 60px;
+    }
+    .menu-checkbox:checked ~ .menu-drawer{
+        transform: translateX(0);
+    }
+    /* điều chỉnh logo, close, ul phần overlay */
+    .menu-drawer__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo__drawer img{
+        width: 90px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .icon__drawer i{
+        color: white;
+    }
+    #navbar__list--mobie {
+        margin-top: 30px;
+    }
+    #navbar__list--mobie a{
+        color: white;
+    }
+    #navbar__list--mobie li{
+        display: block;
+    }
+    /* phần main header */
+    .header{
+        height: 1400px;
+    }
+    .header_main{
+        flex-direction: column;
+        height: 1100px;
+    }
+    .extra--active{
+        display: none;
+    }
+    .header_main--title{
+        order: 2;
+        width: 89%;
+    }
+    .header_main--image{
+        order:1;
+    }
+    /* phần features */
+    .features{
+        height: 1250px;
+    }
+    .features__top{
+        width: 100%;
+    }
+    .features__bottom{
+        margin-top: 40px;
+        flex-direction: column;
+        height: 900px;
+    }
+    .features__bottom--content{
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* phần courses */
+    .courses{
+        height: 2000px;
+    }
+    .courses__bottom--content{
+        width: 90%;
+        object-fit: contain;
+    }
+    .courses__bottom{
+        height: 1900px;
+        flex-direction: column;
+    }
+    /* phần countdown */
+    .countdown{
+        margin-top: 300px;
+        width: 70%;
+    }
+    /* phần testimonial */
+    .testimonial{
+        height: 600px;
+        flex-direction: column;
+    }
+    .testimonial__left{
+        width: 100%;
+        position: relative;
+    }
+    .active-testimonial img{
+        display: none;
+    }
+    /* phần ready */
+    .ready{
+        flex-direction: column;
+    }
+    /* phần footer */
+    .footer{
+        height: 650px;
+        display: flex;
+    flex-wrap: wrap;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98) {
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+}
